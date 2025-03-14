@@ -26,17 +26,31 @@ serve -s build
 Python `3.10.15`、[AutoGen](https://microsoft.github.io/autogen/stable/index.html) `v0.4.8` で検証済み。
 
 #### 1. Create venv
-
+- MacOS
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
 pip install "autogen-agentchat==0.4.8" "autogen-ext[magentic-one,openai,azure]==0.4.8" "fastapi" "uvicorn[standard]" "PyYAML"
 ```
 
+- Windows
+```bash
+python3 -m venv .venv
+.\.venv\Scripts\activate
+pip install "autogen-agentchat==0.4.8" "autogen-ext[magentic-one,openai,azure]==0.4.8" "fastapi" "uvicorn[standard]" "PyYAML"
+```
+
 #### 2. Run
+- MacOS
 ```bash
 .venv/bin/uvicorn main:app --reload
 ```
+- Windows
+```bash
+.\.venv\Scripts\uvicorn main:app --reload
+```
+
+
 現状、以下の GroupChat が実装されています。
 - `main.py`: Magentic-One(Default)
 - `main_selector.py`: SelectorGroupChat
