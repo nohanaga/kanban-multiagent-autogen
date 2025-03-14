@@ -58,3 +58,8 @@ OpenAI/Azure OpenAI モデルへの接続設定を記述する必要がある。
 
 ### 色定数
 [`src/PersonalKanban/enums/index.tsx`](src/PersonalKanban/enums/index.tsx) を編集する。
+
+# Acknowledgment
+I am grateful for [personal-kanban
+](https://github.com/nishantpainter/personal-kanban)
+
