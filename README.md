@@ -47,6 +47,9 @@ OpenAI/Azure OpenAI モデルへの接続設定を記述する必要がある。
 [`model_config_template.yaml`](model_config_template.yaml) を編集し、`model_config.yaml` として保存する。
 
 ## Customize
+### エージェントとかんばんカラムのマッピング
+AutoGen の `AssistantAgent` で定義した `name` パラメータと同じ `title` を持つかんばんカラムを追加することで、自動的に対応するカラムに発言（カード）が追加される仕組み。マッピングに失敗した場合は index=0 のカラムに追加される。
+
 ### 初期エージェント
 [`src/PersonalKanban/services/Utils.ts`](src/PersonalKanban/services/Utils.ts#L62) の `getInitialState` 配列を編集する。
 
