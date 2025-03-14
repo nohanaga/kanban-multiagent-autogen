@@ -62,10 +62,10 @@ AutoGen の `AssistantAgent` で定義した `name` パラメータと同じ `ti
 ### 色定数
 [`src/PersonalKanban/enums/index.tsx`](src/PersonalKanban/enums/index.tsx) を編集する。
 
-# DEMO
+## DEMO
 LLM を使用せずに複数発言をシミュレートするにはメッセージに `start demo` を入力して送信する。
 
-# Acknowledgment
+## Acknowledgment
 I am grateful for [personal-kanban
 ](https://github.com/nishantpainter/personal-kanban)
 
