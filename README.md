@@ -30,13 +30,17 @@ Python `3.10.15`、[AutoGen](https://microsoft.github.io/autogen/stable/index.ht
 ```bash
 python3 -m venv .venv
 . .venv/bin/activate
-pip install "autogen-agentchat==0.4.8" "autogen-ext[openai,azure]==0.4.8" "fastapi" "uvicorn[standard]" "PyYAML"
+pip install "autogen-agentchat==0.4.8" "autogen-ext[magentic-one,openai,azure]==0.4.8" "fastapi" "uvicorn[standard]" "PyYAML"
 ```
 
 #### 2. Run
 ```bash
 .venv/bin/uvicorn main:app --reload
 ```
+現状、以下の GroupChat が実装されています。
+- `main.py`: Magentic-One(Default)
+- `main_selector.py`: SelectorGroupChat
+- `main_swarm.py`: Swarm
 
 ## Model Config
 OpenAI/Azure OpenAI モデルへの接続設定を記述する必要がある。
